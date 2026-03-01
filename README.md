@@ -2,9 +2,9 @@
 
 **Document-to-Executable Factory Intelligence with Physical AI**
 
-DocRun takes factory maintenance manuals and makes them executable. Upload a PDF, the system extracts troubleshooting knowledge using Docling + Gemini, then continuously monitors sensors and diagnoses faults — with solutions and actions pulled directly from the document.
+DocRun takes factory maintenance manuals and makes them executable. Upload a PDF, the system extracts troubleshooting knowledge using Docling + Gemini, then continuously monitors sensors and diagnoses faults, with solutions and actions pulled directly from the document.
 
-When a physical obstruction is detected, DocRun verifies it with an Intel RealSense depth camera and deploys a robotic arm (LeRobot SO101) to clear it — closing the loop from diagnosis to automated resolution.
+When a physical obstruction is detected, DocRun verifies it with an Intel RealSense depth camera and deploys a robotic arm (LeRobot SO101) to clear it, closing the loop from diagnosis to automated resolution.
 
 Update the doc, update the diagnosis. No retraining, no hardcoded rules.
 

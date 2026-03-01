@@ -6,7 +6,7 @@ DocRun takes factory maintenance manuals and makes them executable. Upload a PDF
 
 When a physical obstruction is detected, DocRun verifies it with an Intel RealSense depth camera and deploys a robotic arm (LeRobot SO101) to clear it — closing the loop from diagnosis to automated resolution.
 
-Change the document, the diagnostic behavior changes. No retraining, no hardcoded rules.
+Update the doc, update the diagnosis. No retraining, no hardcoded rules.
 
 ## System Flow
 
@@ -122,7 +122,7 @@ After running, check the `output/` folder:
 ## Tech Stack
 
 - **Docling** — IBM document parsing (PDF tables, structure extraction)
-- **Gemini 2.5 Flash** — fault extraction + diagnostic reasoning
+- **Gemini Flash** — fault extraction + diagnostic reasoning
 - **FastAPI** — REST API + WebSocket
 - **Pydantic** — data validation and schemas
 - **Intel RealSense** — depth camera obstacle detection (pyrealsense2 + OpenCV)

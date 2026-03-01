@@ -51,7 +51,7 @@ All hardware is optional — the system runs with simulated sensors if no hardwa
 
 ```bash
 # Clone the repo
-git clone <your-repo-url>
+git clone git@github.com:viktor-ece/DocRun.git
 cd physical_ai_hackathon
 
 # Create .env with your Gemini API key

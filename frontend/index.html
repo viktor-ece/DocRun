@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DocRun</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+
+  <!-- Top Bar -->
+  <header id="topbar">
+    <div class="topbar-left">
+      <h1>DocRun</h1>
+      <span class="subtitle">Document-to-Executable Factory Intelligence</span>
+    </div>
+    <div id="equipment-info" class="topbar-right hidden">
+      <span id="equip-type"></span>
+      <span id="equip-model"></span>
+    </div>
+  </header>
+
+  <!-- Tabs -->
+  <nav id="tabs">
+    <button class="tab active" data-tab="upload">Upload & Parse</button>
+    <button class="tab" data-tab="monitor">Sensors & Diagnosis</button>
+    <button class="tab" data-tab="faults">Fault Table</button>
+  </nav>
+
+  <!-- Tab: Upload & Parse -->
+  <section id="tab-upload" class="tab-content active">
+    <div class="upload-area" id="drop-zone">
+      <div class="upload-icon">+</div>
+      <p>Drop a PDF here or <label for="file-input" class="file-label">browse</label></p>
+      <input type="file" id="file-input" accept=".pdf" hidden>
+    </div>
+
+    <div id="parse-status" class="hidden">
+      <div class="status-card">
+        <div class="spinner"></div>
+        <span id="parse-msg">Parsing document with Docling...</span>
+      </div>
+    </div>
+
+    <div id="parse-result" class="hidden">
+      <div class="info-cards">
+        <div class="info-card">
+          <div class="info-label">Document</div>
+          <div id="doc-title" class="info-value"></div>
+        </div>
+        <div class="info-card">
+          <div class="info-label">Equipment</div>
+          <div id="doc-equipment" class="info-value"></div>
+        </div>
+        <div class="info-card">
+          <div class="info-label">Model</div>
+          <div id="doc-model" class="info-value"></div>
+        </div>
+        <div class="info-card">
+          <div class="info-label">Faults Extracted</div>
+          <div id="doc-fault-count" class="info-value"></div>
+        </div>
+      </div>
+
+      <h3>Thresholds</h3>
+      <div id="thresholds-grid" class="thresholds-grid"></div>
+    </div>
+  </section>
+
+  <!-- Tab: Sensors & Diagnosis -->
+  <section id="tab-monitor" class="tab-content">
+    <div class="monitor-controls">
+      <div class="control-group">
+        <label>Inject Fault:</label>
+        <select id="scenario-select">
+          <option value="">-- Normal --</option>
+        </select>
+        <button id="btn-inject" class="btn">Inject</button>
+        <button id="btn-clear" class="btn btn-secondary">Clear</button>
+      </div>
+      <div class="control-group">
+        <button id="btn-diagnose" class="btn btn-primary">Run Diagnosis</button>
+        <button id="btn-monitor" class="btn btn-monitor">Start Monitoring</button>
+      </div>
+    </div>
+
+    <h3>Sensor Readings</h3>
+    <div id="sensor-grid" class="sensor-grid"></div>
+
+    <h3>Diagnosis</h3>
+    <div id="diagnosis-panel" class="diagnosis-panel">
+      <p class="placeholder-text">Run a diagnosis or start monitoring to see results.</p>
+    </div>
+  </section>
+
+  <!-- Tab: Fault Table -->
+  <section id="tab-faults" class="tab-content">
+    <div id="fault-table-container">
+      <p class="placeholder-text">Upload a document first to see the extracted fault table.</p>
+    </div>
+  </section>
+
+  <script src="/app.js"></script>
+</body>
+</html>

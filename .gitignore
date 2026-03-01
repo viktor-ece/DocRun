@@ -1,0 +1,42 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+
+# Virtual environment
+.venv/
+
+# Environment variables
+.env
+
+# Output files (generated at runtime)
+output/
+
+# Docling cache
+.docling/
+
+# App cache (parse results by file hash)
+.cache/
+
+# UV
+uv.lock
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Manuals (too large for git)
+manuals/
+syn_manuals/
+
+# Scripts
+run.sh
+
+# Test artifacts
+camera_test.jpg

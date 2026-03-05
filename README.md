@@ -137,4 +137,4 @@ After running, check the `output/` folder:
 
 ## Team
 
-Built for the Physical AI Hackathon by the Jason Team.
+Built for the Physical AI Hackathon in 24h.

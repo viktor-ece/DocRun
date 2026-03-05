@@ -8,6 +8,12 @@ When a physical obstruction is detected, DocRun verifies it with an Intel RealSe
 
 Update the doc, update the diagnosis. No retraining, no hardcoded rules.
 
+## Contributors
+
+* **Viktor Deligiannis** 
+* **Stefanos Manos** 
+* **Antonios Papantoniou** 
+
 ## System Flow
 
 ![DocRun Flow Graph](FlowGraph.png)

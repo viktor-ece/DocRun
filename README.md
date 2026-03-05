@@ -1,4 +1,4 @@
-# DocRun by the Jason Team
+# DocRun
 
 **Document-to-Executable Factory Intelligence with Physical AI**
 
